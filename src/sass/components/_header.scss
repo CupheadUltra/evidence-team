@@ -22,11 +22,11 @@
 
         @media screen and (min-width: 1334px) {
             display: flex;
-            margin-left: 512px;
+            margin-left: 450px;
         }
 
         @media screen and (min-width: 1766px) {
-            margin-left: 800px;
+            margin-left: 700px;
         }
     }
 
@@ -57,25 +57,12 @@
     }
 
     &__menu {
+        margin-right: 56px;
 
         @media screen and (min-width: 1334px) {
             display: none;
         }
 
-    }
-
-    &__profile {
-        background-color: transparent;
-        border: none;
-        fill: transparent;
-        stroke: $svg-color;
-        margin-left: 150px;
-
-        @media screen and (min-width: 1334px) {
-            text-align: right;
-            width: 29px;
-            height: 29px;
-        }
     }
 
     &__icons {
@@ -98,6 +85,36 @@
     &__icon {
         width: 24px;
         height: 24px;
-        background-color: greenyellow;
+        stroke: $svg-color;
+    }
+
+    &__search {
+        width: 24px;
+        height: 24px;
+        fill: transparent;
+        stroke: $svg-color;
+        margin-left: 56px;
+
+        @media screen and (min-width: 1334px) {
+            display: none;
+        }
+    }
+
+    &__prof {
+        display: none;
+
+        @media screen and (min-width: 1334px) {
+            display: flex;
+            fill: transparent;
+            stroke: $svg-color;
+            width: 29px;
+            height: 29px;
+        }
+
+
+        @media screen and (min-width: 1766px) {
+            width: 42px;
+            height: 42px;
+        }
     }
 }

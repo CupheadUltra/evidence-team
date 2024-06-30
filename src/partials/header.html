@@ -3,12 +3,25 @@
 
         <button type="button" class="header__menu" data-menu-open>
             <svg class="header__icon">
-                <use href="./img/symbol-defs.svg#menu"></use>
+                <use href="../img/symbol-defs.svg#menu"></use>
             </svg>
         </button>
 
-        <svg class="header__icons">
-            <use href="../img/symbol-defs.svg#logo"></use>
+        <picture>
+            <source
+                srcset="../img/desktop/logo@1x-desktop.webp 1x , ../img/desktop/logo@2x-desktop.webp 2x"
+                media="(min-width: 1766px)">
+            <source
+                srcset="../img/tablet/logo@1x-tablet.webp 1x , ../img/tablet/logo@2x-tablet.webp 2x"
+                media="(min-width: 1334px)">
+            <source
+                srcset="../img/mobile/logo@1x-mobile.webp 1x , ../img/mobile/logo@2x-mobile.webp 2x"
+                media="(max-width: 1333px)">
+            <img class="header__logo" src="../img/desktop/logo@1x-desktop.webp" alt="">
+        </picture>
+
+        <svg class="header__search">
+            <use href="../img/symbol-defs.svg#search"></use>
         </svg>
 
 
@@ -34,9 +47,13 @@
             </li>
         </ul>
 
+        <svg class="header__prof">
+            <use href="../img/symbol-defs.svg#profile"></use>
+        </svg>
+
         <!-- <button type="button" class="header__profile">
-            <svg class="header__prof" width="42" height="42">
-                <use href="./img/symbol-defs.svg#profile"></use>
+            <svg class="header__prof"">
+                <use href=""></use>
             </svg>
         </button> -->
 
